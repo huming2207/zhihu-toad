@@ -1,0 +1,24 @@
+<meta name="referrer" content="no-referrer" />
+<meta charset="utf-8" />
+<div class="highlight">
+	<pre>
+		<code class="language-java">
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Location</span> <span class="o">{</span>
+
+    <span class="c1">// ...</span>
+
+    <span class="kd">public</span> <span class="n">Weather</span> <span class="nf">getWeather</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// Step 1</span>
+        <span class="c1">// Xu's weather report algorithm</span>
+        <span class="c1">// Xu Jiagao, China United Engineering Corporation, Hangzhou, 2009</span>
+        <span class="n">Person</span> <span class="n">elder</span> <span class="o">=</span> <span class="n">Person</span><span class="o">.</span><span class="na">getByNickname</span><span class="o">(</span><span class="s">"Toad"</span><span class="o">);</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">elder</span><span class="o">.</span><span class="na">getLocation</span><span class="o">().</span><span class="na">equals</span><span class="o">(</span><span class="k">this</span><span class="o">))</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">Weather</span><span class="o">.</span><span class="na">SUNNY</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="c1">// other stuff...</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</code>	</pre>
+</div>

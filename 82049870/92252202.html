@@ -1,0 +1,22 @@
+<meta name="referrer" content="no-referrer" />
+<meta charset="utf-8" />
+一般来说预测是否正确与是否下雨不独立，预报正确概率理解为平均情况
+<br>
+<img src="http://zhihu.com/equation?tex=P%28%5Ctext%7BRight%7D%29+%3D+P%28%5Ctext%7BRain%7D%29+P%28%5Ctext%7BRight%7D%7C%5Ctext%7BRain%7D%29+%2B+P%28%5Ctext%7BNo+Rain%7D%29P%28%5Ctext%7BRight%7D%7C%5Ctext%7BNo+Rain%7D%29%5C%5C+%3D+0.8x%2B0.2y+%3D+0.8" alt="P(\text{Right}) = P(\text{Rain}) P(\text{Right}|\text{Rain}) + P(\text{No Rain})P(\text{Right}|\text{No Rain})\\ = 0.8x+0.2y = 0.8" eeimg="1">
+<br>
+预报下雨的情况里下雨的概率
+<br>
+<img src="http://zhihu.com/equation?tex=P%28%5Ctext%7BRain%7D%7C%5Ctext%7BForecast+Rain%7D%29+%3D+%5Cfrac%7B0.8x%7D%7B0.2%281-y%29%2B0.8x%7D" alt="P(\text{Rain}|\text{Forecast Rain}) = \frac{0.8x}{0.2(1-y)+0.8x}" eeimg="1">
+<br>
+<b>
+	最小是 0.8
+</b>
+（对应气象工作者闷声大发财，什么事也不做，天天预报下雨的情况），最大是 1（对应气象工作者从不见的风是的雨，不下雨时预报没有偏差，下雨时预报正确概率 0.75），16/17 则是 x=y=0.8 的情况，是否预报正确与是否下雨独立。
+<br>
+<br>
+<img src="http://pic3.zhimg.com/50/227a9925c0abcad7daee9c0205d15be2_b.png" data-rawwidth="720" data-rawheight="567" class="origin_image zh-lightbox-thumb" width="720" data-original="http://pic3.zhimg.com/50/227a9925c0abcad7daee9c0205d15be2_r.png">
+<br>
+（上图仅用来表示函数的单调性）
+<br>
+<br>
+说是 0.68，说明一种能控制天气，降低下雨概率的生物要来了。这个老师也是同道中人啊，excited。

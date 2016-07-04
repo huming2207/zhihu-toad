@@ -1,0 +1,96 @@
+<meta name="referrer" content="no-referrer" />
+<meta charset="utf-8" />
+卸腰。
+<br>
+<br>
+<b>
+	先下结论：一个好的MIDI文件包含的信息量比一个同等的乐谱要大得多。
+</b>
+<br>
+<br>
+在音乐越简单的时候，五线谱看起来越整齐。
+<br>
+<img src="http://pic1.zhimg.com/50/91ccd3fe150950218de334bf4b7526dc_b.png" data-rawwidth="368" data-rawheight="191" class="content_image" width="368">
+<img src="http://pic4.zhimg.com/50/1b7e5acbf93398c09ba8617679b7ca9b_b.png" data-rawwidth="344" data-rawheight="246" class="content_image" width="344">
+<br>
+稍有常识的人都能看出，在这种简单整齐的音乐中，五线谱读起来要方便很多。
+<br>
+<br>
+但是，当音符变得杂乱无章的时候，MIDI就能够显示出更多的信息。
+<br>
+<br>
+比如这样
+<br>
+<img src="http://pic3.zhimg.com/50/cb8d33bea98b6cbf5e8b2e0718ec3dde_b.png" data-rawwidth="351" data-rawheight="266" class="content_image" width="351">
+<br>
+变成五线谱之后，这是什么鬼
+<br>
+<img src="http://pic1.zhimg.com/50/0232f00c5458cc19306806cf4482338c_b.png" data-rawwidth="664" data-rawheight="278" class="origin_image zh-lightbox-thumb" width="664" data-original="http://pic1.zhimg.com/50/0232f00c5458cc19306806cf4482338c_r.png">
+<br>
+像是上面这么复杂的音乐，在五线谱里不可能表示得出来，但是MIDI文件就可以完美包含乐曲中所带有的信息。
+<br>
+<br>
+上面的音频试听：
+<a href="http://link.zhihu.com/?target=http%3A//pan.baidu.com/s/1BbyQa" class=" wrap external" target="_blank" rel="nofollow noreferrer">
+	闷声作大曲.mp3
+	<i class="icon-external">
+	</i>
+</a>
+<br>
+<br>
+另外，MIDI可以包含许多五线谱表示不了的信息。
+<br>
+<br>
+比如五线谱里要想标明演奏的力度，除了表情符号外，只能使用一些比如重音">"之类的记号，而这些记号只能给出一个模糊的力度范围，还得靠演奏者自己理解，但是MIDI中可以给所有音符设定0-127之间的一个精确的力度值，这点上完爆五线谱。
+<br>
+<br>
+<img src="http://pic1.zhimg.com/50/537968f3092455d65365e666e4078258_b.png" data-rawwidth="284" data-rawheight="260" class="content_image" width="284">
+<br>
+同样的曲子，更改了音符力度。只留下Eb这个和弦内的音较强，和弦外的音很弱，听起来就和谐多了。
+<br>
+<br>
+这是修改后的音频试听：
+<a href="http://link.zhihu.com/?target=http%3A//pan.baidu.com/s/1dDrYzfF" class=" wrap external" target="_blank" rel="nofollow noreferrer">
+	闷声作大曲02.mp3
+	<i class="icon-external">
+	</i>
+</a>
+<br>
+<br>
+MIDI还可以完成一些神奇的膜法。比如在一般演奏乐器中，力度大一定代表着强，力度小一定代表着弱，没法狠狠砸钢琴却演奏出ppp的声音。但是在MIDI中，我们可以把力度拉到最大，但是音量放到很低，就可以做到了！
+<br>
+<br>
+在标准的MIDI CC规范中，有127个控制器。为什么都是127个呢？因为0-127总共128个，正好是7位数二进制的容量。其中有一些控制器是规定好，通用的：
+<br>
+<br>
+0号控制音色变换
+<br>
+1号控制颤音深度（某些音色改为控制动态大小）
+<br>
+2号控制呼吸（一般只对管乐有用）
+<br>
+7号控制通道音量
+<br>
+10号控制左右声相
+<br>
+11号控制表情音量
+<br>
+64号控制延音踏板
+<br>
+89号纟卖hsdifgnsjn*&^$%*&……
+<br>
+<br>
+那么在这些通用的固定控制器之外，还剩一百多个，是空的，每个音色可以根据自己音色的特性往里面自行安排一些变量。这些数据全部存储在MIDI文件中，而五线谱完全无法包含。
+<br>
+<br>
+五线谱是拿给人演奏看的，MIDI是拿给电脑演奏看的，电脑的处理运算能力比人要快得多，MIDI包含的信息量远远超过五线谱也是理所当然的。
+<br>
+<br>
+<b>
+	不信，你让郎朗来演奏刚刚那段音乐试试？
+</b>
+<br>
+<img src="http://pic1.zhimg.com/50/7363776271f3e153f8e9f4a897259130_b.png" data-rawwidth="405" data-rawheight="102" class="content_image" width="405">
+<br>
+<br>
+不好意思，评论区太暴力的我都删了

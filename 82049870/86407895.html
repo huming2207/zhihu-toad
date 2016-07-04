@@ -1,0 +1,37 @@
+<meta name="referrer" content="no-referrer" />
+<meta charset="utf-8" />
+谈谈在Adobe Audition3.0中的简单实现方法
+<br>
+首先需要一张位图文件（.bmp)，如图
+<br>
+<img src="http://pic2.zhimg.com/50/bfe884ba81ad7b840365b0b61f30752d_b.jpg" data-rawwidth="317" data-rawheight="450" class="content_image" width="317">
+<br>
+然后打开Adobe Audition3.0，如下图选择导入位图
+<br>
+<img src="http://pic3.zhimg.com/50/2e05e40c7445e0b790f43a8f81a587e6_b.png" data-rawwidth="1382" data-rawheight="749" class="origin_image zh-lightbox-thumb" width="1382" data-original="http://pic3.zhimg.com/50/2e05e40c7445e0b790f43a8f81a587e6_r.png">
+<br>
+然后选择文件
+<br>
+<img src="http://pic1.zhimg.com/50/68ea846f18d02fd408ccec9feb594288_b.png" data-rawwidth="710" data-rawheight="477" class="origin_image zh-lightbox-thumb" width="710" data-original="http://pic1.zhimg.com/50/68ea846f18d02fd408ccec9feb594288_r.png">
+<br>
+选择转换参数
+<br>
+<img src="http://pic3.zhimg.com/50/0b5b831ea26c6b11c0ddac5cce3c1ade_b.png" data-rawwidth="447" data-rawheight="358" class="origin_image zh-lightbox-thumb" width="447" data-original="http://pic3.zhimg.com/50/0b5b831ea26c6b11c0ddac5cce3c1ade_r.png">
+<br>
+参数可以自行调节，白色是指将图片中的“高光”RGB(255, 255, 255)映射到-20 dB的频率，黑色则是将图片中的“阴影”RGB(0, 0, 0)映射到-100 dB的频率。伽马值是调整图片中间调的参数，决定阴影和高光的相对量。
+<br>
+（下面的三个选项（即“单音”等）对于转换方式略有影响，但是我们仅是在频谱图上看图像轮廓，所以影响不是很大。在Au 3.0的帮助文件中的Import a bitmap image as audio与Spectral Bitmap Image (.bmp)两个词条对导入导出位图有详细的介绍。）
+<br>
+选择波形文件参数
+<br>
+<img src="http://pic2.zhimg.com/50/1a2fa0d8fa90a074c48b54c043bae339_b.png" data-rawwidth="370" data-rawheight="279" class="content_image" width="370">
+<br>
+然后就完成了！
+<br>
+<img src="http://pic1.zhimg.com/50/41f06f908ff1f09bfc4a50d1652c7cc4_b.png" data-rawwidth="1393" data-rawheight="793" class="origin_image zh-lightbox-thumb" width="1393" data-original="http://pic1.zhimg.com/50/41f06f908ff1f09bfc4a50d1652c7cc4_r.png">
+<br>
+现在的纵横比不是很对_(:зゝ∠)_只需要插入一些静音片段即可
+<br>
+<img src="http://pic3.zhimg.com/50/e98ce412ae4f5bfba762dfe0c4d0cce6_b.png" data-rawwidth="388" data-rawheight="481" class="content_image" width="388">
+<br>
+目前似乎只有Au早期版本中有导入\导出位图文件功能，CS6开始就没有这个功能了（至少我没找到）。帮助文件中指出这个功能被用于导出频谱图，然后在Photoshop中进行修改，最终再导入音频。至于后续版本中删除这一功能或许是Au自身的频谱修改已经可以满足需求了吧...
